@@ -1,0 +1,5 @@
+{
+  "version": 2,
+  "builds": [{ "src": "api/add-tag.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/api/(.*)", "dest": "/api/add-tag.js" }]
+}
